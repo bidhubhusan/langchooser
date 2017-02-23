@@ -19,7 +19,7 @@
   </head>
   <body>
   <div class="container">
-  <h1 style="
+  <h1 id="page-title" style="
     padding-left: 191px;
     padding-bottom: 13px;
 ">My form</h1>
@@ -72,7 +72,7 @@
 			}
 		};
 		
-		var dr = ['Titel','E-Mail Addresse','Erinnere dich an mich','Anmelden'];
+		var dr = ['Meine Form','Titel','E-Mail Addresse','Erinnere dich an mich','Anmelden'];
 		
 		$(window).load(function(){
 			 var userLang = navigator.language || navigator.userLanguage; 
@@ -80,10 +80,11 @@
 			var launguage = getUrlParameter('labellang');
 			var launguagevalue = getUrlParameter('valuelang');
 			if(launguage == "de"){
-				$("#name-label").html(dr[0]);
-				$("#password-label").html(dr[1]);
-				$("#chk-btn").html(dr[2]);				
-				$("#sign-btn").html(dr[3]);				
+				$("#page-title").html(dr[0]);
+				$("#name-label").html(dr[1]);
+				$("#password-label").html(dr[2]);
+				$("#chk-btn").html(dr[3]);				
+				$("#sign-btn").html(dr[4]);				
 			}
 			 var userLang = navigator.language || navigator.userLanguage; alert ("The language is: " + userLang); 
 		})
