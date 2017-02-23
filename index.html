@@ -75,6 +75,8 @@
 		var dr = ['Titel','E-Mail Addresse','Erinnere dich an mich','Anmelden'];
 		
 		$(window).load(function(){
+			 var userLang = navigator.language || navigator.userLanguage; 
+			 alert ("The language is: " + userLang); 
 			var launguage = getUrlParameter('labellang');
 			var launguagevalue = getUrlParameter('valuelang');
 			if(launguage == "de"){
