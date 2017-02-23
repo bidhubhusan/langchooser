@@ -79,14 +79,13 @@
 			 alert ("The language is: " + userLang); 
 			var launguage = getUrlParameter('labellang');
 			var launguagevalue = getUrlParameter('valuelang');
-			if(launguage == "de"){
+			if(userLang != "en-us" || launguage == "de"){			
 				$("#page-title").html(dr[0]);
 				$("#name-label").html(dr[1]);
 				$("#password-label").html(dr[2]);
 				$("#chk-btn").html(dr[3]);				
-				$("#sign-btn").html(dr[4]);				
+				$("#sign-btn").html(dr[4]);
 			}
-			 var userLang = navigator.language || navigator.userLanguage; alert ("The language is: " + userLang); 
 		})
 	</script>
 	
